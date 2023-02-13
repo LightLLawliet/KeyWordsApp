@@ -1,9 +1,9 @@
-package com.example.keywordsapp
+package com.example.keywordsapp.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.keywordsapp.R
 import com.example.keywordsapp.databinding.ActivityMainBinding
-import com.example.keywordsapp.ui.main.SectionsPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
