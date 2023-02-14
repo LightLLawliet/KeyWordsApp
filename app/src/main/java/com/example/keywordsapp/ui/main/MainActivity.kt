@@ -7,8 +7,6 @@ import com.example.keywordsapp.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
     private val tabTitles = arrayOf(
         R.string.tab_text_1,
         R.string.tab_text_2,
@@ -27,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         TabLayoutMediator(
             binding.tabs, viewPager
         ) { tab, position -> tab.setText(tabTitles[position]) }.attach()
-
         if (savedInstanceState == null)
             binding.tabs.selectTab(binding.tabs.getTabAt(1))
     }
